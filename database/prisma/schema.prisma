@@ -1,0 +1,11 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Core data models (users, restaurants, menus, etc.) will be added in v0.2.0
+/// as part of the "Core Data & Auth" milestone.

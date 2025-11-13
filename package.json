@@ -1,0 +1,33 @@
+{
+  "name": "chakula",
+  "version": "0.1.0",
+  "description": "Monorepo for the Chakula platform",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "npm@10.9.0",
+  "workspaces": [
+    "apps/*",
+    "api",
+    "database",
+    "shared"
+  ],
+  "scripts": {
+    "dev:web": "npm run --workspace @chakula/web dev",
+    "dev:mobile": "npm run --workspace @chakula/mobile start",
+    "dev:api": "npm run --workspace @chakula/api start:dev",
+    "build:web": "npm run --workspace @chakula/web build",
+    "build:api": "npm run --workspace @chakula/api build",
+    "lint:web": "npm run --workspace @chakula/web lint",
+    "lint:mobile": "npm run --workspace @chakula/mobile lint",
+    "lint:api": "npm run --workspace @chakula/api lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
+  }
+}

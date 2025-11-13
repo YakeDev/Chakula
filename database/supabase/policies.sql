@@ -1,0 +1,2 @@
+-- Supabase RLS policies will be added when the data models land in v0.2.0.
+-- Keeping this file here keeps the workflow explicit for future migrations.
