@@ -27,6 +27,30 @@ export type OrderStatus =
   | "delivered"
   | "cancelled";
 
+export type PaymentMethod = "mpesa" | "airtel" | "cash";
+
+export type PaymentStatus = "initiated" | "confirmed" | "failed" | "refunded";
+
+export interface UserProfile {
+  id: string;
+  fullname: string;
+  email: string;
+  phone: string;
+  role: UserRole;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface AuthTokens {
+  accessToken: string;
+  expiresInSeconds: number;
+}
+
+export interface AuthPayload {
+  user: UserProfile;
+  tokens: AuthTokens;
+}
+
 export interface ApiSuccess<T> {
   success: true;
   data: T;

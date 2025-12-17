@@ -33,15 +33,15 @@ export default function Home() {
     <div className="bg-neutral-950 text-white">
       <header className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-20 sm:px-10">
         <p className="text-sm uppercase tracking-[0.3em] text-amber-400">
-          Chakula v0.1.0
+          Chakula v0.2.0
         </p>
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
           Base technique prête pour connecter les gourmands de Lubumbashi.
         </h1>
         <p className="text-lg text-neutral-300 sm:max-w-2xl">
-          Next.js 16, Expo, NestJS et Prisma sont configurés avec TypeScript strict.
-          Chaque app consommera les mêmes types partagés pour garantir une expérience
-          cohérente sur mobile, web et dashboards.
+          Authentification de base, modèles Prisma et endpoints d&apos;inscription/login
+          sont en place. Les apps consomment les types partagés pour garantir une
+          expérience cohérente sur mobile, web et dashboards.
         </p>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Link

@@ -25,10 +25,11 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.badge}>v0.1.0</Text>
+        <Text style={styles.badge}>v0.2.0</Text>
         <Text style={styles.title}>Chakula</Text>
         <Text style={styles.subtitle}>
-          Stack initialisée (Expo + TypeScript strict). Les écrans MVP arriveront en v0.4.0.
+          Authentification de base et schémas de données sont prêts. Les écrans MVP
+          arriveront en v0.4.0.
         </Text>
       </View>
 

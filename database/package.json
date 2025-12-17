@@ -1,6 +1,6 @@
 {
   "name": "@chakula/database",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Database utilities for Chakula (Prisma + Supabase tooling)",
   "license": "MIT",
   "private": true,
